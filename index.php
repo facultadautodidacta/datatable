@@ -103,6 +103,7 @@
 					if(r==1){
 						$('#frmnuevo')[0].reset();
 						$('#tablaDatatable').load('tabla.php');
+						$('#agregarnuevosdatosmodal').modal('hide');
 						alertify.success("agregado con exito :D");
 					}else{
 						alertify.error("Fallo al agregar :(");
@@ -121,6 +122,7 @@
 				success:function(r){
 					if(r==1){
 						$('#tablaDatatable').load('tabla.php');
+						$('#modalEditar').modal('hide');
 						alertify.success("Actualizado con exito :D");
 					}else{
 						alertify.error("Fallo al actualizar :(");
